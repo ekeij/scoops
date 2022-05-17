@@ -1,0 +1,14 @@
+{
+    "version": "1.14.0",
+    "description": "kube-score is a tool that performs static code analysis of your Kubernetes object definitions.",
+    "homepage": "https://github.com/zegl/kube-score",
+    "license": "MIT",
+    "url": "https://github.com/zegl/kube-score/releases/download/v1.14.0/kube-score_1.14.0_windows_amd64.exe",
+    "hash": "04b513463fb081f0e601da0b5ca32956a984945dbd6e5f8a0f673590a3edb6a1",
+    "pre_install": "Rename-Item -Path $(\"$dir\\kube-score_\" + $version + \"_windows_amd64.exe\") -NewName kube-score.exe",
+    "bin": "kube-score.exe",
+    "checkver": "github",
+    "autoupdate": {
+        "url": "https://github.com/zegl/kube-score/releases/download/v$version/$(\"kube-score_\" + $version +\"_windows_amd64.exe\")"
+    }
+}
