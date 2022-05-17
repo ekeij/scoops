@@ -1,0 +1,14 @@
+{
+    "version": "0.3.0",
+    "description": "KubeLinter analyzes Kubernetes YAML files and Helm charts, and checks them against a variety of best practices, with a focus on production readiness and security.",
+    "homepage": "https://github.com/stackrox/kube-linter",
+    "license": "Apache-2.0",
+    "url": "https://github.com/stackrox/kube-linter/releases/download/0.3.0/kube-linter-windows",
+    "hash": "2f0c2542f7528757e8a526c306ca02a18c2b7a1ee31f1cee40b28773b58bc3c6",
+    "pre_install": "Rename-Item -Path \"$dir\\kube-linter-windows\" -NewName kube-linter.exe",
+    "bin": "kube-linter.exe",
+    "checkver": "github",
+    "autoupdate": {
+        "url": "https://github.com/stackrox/kube-linter/releases/download/$version/kube-linter-windows"
+    }
+}
