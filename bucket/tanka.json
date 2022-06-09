@@ -1,0 +1,14 @@
+{
+    "version": "0.22.0",
+    "description": "The clean, concise and super flexible alternative to YAML for your Kubernetes cluster",
+    "homepage": "https://github.com/grafana/tanka",
+    "license": "Apache-2.0",
+    "url": "https://github.com/grafana/tanka/releases/download/v0.22.0/tk-windows-amd64.exe",
+    "hash": "0fe0856ae67497081264ade7834e95fb5ceea6765ca9baffba4a386338950a63",
+    "pre_install": "Rename-Item -Path \"$dir\\tk-windows-amd64.exe\" -NewName tk.exe",
+    "bin": "tk.exe",
+    "checkver": "github",
+    "autoupdate": {
+        "url": "https://github.com/grafana/tanka/releases/download/v$version/tk-windows-amd64.exe"
+    }
+}
