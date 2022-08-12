@@ -1,0 +1,14 @@
+{
+    "version": "0.11.1",
+    "description": "Dry is a terminal application to manage Docker and Docker Swarm.",
+    "homepage": "https://github.com/moncho/dry",
+    "license": "MIT",
+    "url": "https://github.com/moncho/dry/releases/download/v0.11.1/dry-windows-amd64",
+    "hash": "f93df1f66c9345e0e1ad099257b3498e6ff4eca05f747f6d47cded85f74e3f35",
+    "pre_install": "Rename-Item -Path \"$dir\\dry-windows-amd64\" -NewName dry.exe",
+    "bin": "dry.exe",
+    "checkver": "github",
+    "autoupdate": {
+        "url": "https://github.com/moncho/dry/releases/download/v$version/dry-windows-amd64"
+    }
+}
