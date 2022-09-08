@@ -1,0 +1,14 @@
+{
+    "version": "0.24.0",
+    "description": "The CycloneDX CLI tool currently supports BOM analysis, modification, diffing, merging, format conversion, signing and verification.",
+    "homepage": "https://github.com/CycloneDX/cyclonedx-cli",
+    "license": "Apache-2.0",
+    "url": "https://github.com/CycloneDX/cyclonedx-cli/releases/download/v0.24.0/cyclonedx-win-x64.exe",
+    "hash": "5e4725ac45be612911088260cef399f256e35a16371663d98e1760cccfd84443",
+    "pre_install": "Rename-Item -Path \"$dir\\cyclonedx-win-x64.exe\" -NewName cyclonedx.exe",
+    "bin": "cyclonedx.exe",
+    "checkver": "github",
+    "autoupdate": {
+        "url": "https://github.com/CycloneDX/cyclonedx-cli/releases/download/v$version/cyclonedx-win-x64.exe"
+    }
+}
