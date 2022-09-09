@@ -1,0 +1,14 @@
+{
+    "version": "0.7.8",
+    "description": "git-repo is a command line tool, which adds more sub-commands to git, and works for centralized git workflow like Gerrit, agit-flow of Alibaba.com, and other agit-flow alike protocols...",
+    "homepage": "https://github.com/alibaba/git-repo-go",
+    "license": "Apache-2.0",
+    "url": "https://github.com/alibaba/git-repo-go/releases/download/v0.7.8/git-repo-0.7.8-Windows-64.zip",
+    "hash": "fed6b48b04ca8495eab66fd647eb3a26989d24782435083972755fb55e6ed191",
+    "pre_install": "Move-Item \"$dir\\git-repo-*\\*\" \"$dir\"; Remove-Item \"$dir\\git-repo-*\"",
+    "bin": "git-repo.exe",
+    "checkver": "github",
+    "autoupdate": {
+        "url": "https://github.com/alibaba/git-repo-go/releases/download/v$version/git-repo-$version-Windows-64.zip"
+    }
+}
