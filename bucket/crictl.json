@@ -8,6 +8,6 @@
     "bin": "crictl.exe",
     "checkver": "github",
     "autoupdate": {
-        "url": "https://github.com/kubernetes-sigs/cri-tools/releases/download/v$version/crictl-v1.25.0-windows-amd64.tar.gz"
+        "url": "https://github.com/kubernetes-sigs/cri-tools/releases/download/v$version/crictl-v$version-windows-amd64.tar.gz"
     }
 }
