@@ -1,0 +1,14 @@
+{
+    "version": "0.4.0",
+    "description": "bom is a utility that leverages the code written for the Kubernetes Bill of Materials project. It enables software authors to generate an SBOM for their projects in a simple, yet powerful way.",
+    "homepage": "https://github.com/kubernetes-sigs/bom",
+    "license": "Apache-2.0",
+    "url": "https://github.com/kubernetes-sigs/bom/releases/download/v0.4.0/bom-windows-amd64.exe",
+    "hash": "9abb23407773376b9490f826a679f3d81586ea71783a576e807880736c415e46",
+    "pre_install": "Rename-Item -Path \"$dir\\bom-windows-amd64.exe\" -NewName bom.exe",
+    "bin": "bom.exe",
+    "checkver": "github",
+    "autoupdate": {
+        "url": "https://github.com/kubernetes-sigs/bom/releases/download/v$version/bom-windows-amd64.exe"
+    }
+}
