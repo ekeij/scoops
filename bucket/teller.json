@@ -1,0 +1,13 @@
+{
+  "version": "1.5.6",
+  "description": "Teller - the open-source universal secret manager for developers",
+  "homepage": "https://github.com/tellerops/teller",
+  "license": "Apache-2.0",
+  "url": "https://github.com/tellerops/teller/releases/download/v1.5.6/teller_1.5.6_Windows_x86_64.tar.gz",
+  "hash": "559c9157be11ea79bda549f0cb253d857ea6f82dddc7ffcafda5f5f2101d7f1f",
+  "bin": "teller.exe",
+  "checkver": "github",
+  "autoupdate": {
+      "url": "https://github.com/tellerops/teller/releases/download/v$version/teller_$version_Windows_x86_64.tar.gz"
+  }
+}
